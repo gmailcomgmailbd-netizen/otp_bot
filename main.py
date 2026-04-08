@@ -19,7 +19,7 @@ firebase_key = json.loads(os.getenv("FIREBASE_KEY"))
 cred = credentials.Certificate(firebase_key)
 
 firebase_admin.initialize_app(cred, {
-    "databaseURL": "https://secret-50385.firebaseio.com/"
+    "databaseURL": "https://secret-50385-default-rtdb.firebaseio.com"
 })
 
 # ------------------ LOAD / SAVE ------------------
